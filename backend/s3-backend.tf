@@ -1,8 +1,3 @@
-# terraform-state-template
-
-Terraform code to create an S3 bucket and DynamoDB table to use for state & locking.
-
-```terraform
 provider "aws" {
   region = "eu-west-1"
 }
@@ -52,4 +47,4 @@ resource "aws_dynamodb_table" "name" {
     type = "S"
   }
 }
-```
+
